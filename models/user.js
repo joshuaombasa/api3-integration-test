@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
   email: {type: String, required: true},
   password: {type: Boolean, required: true},
-  providers: [{type: String, required: true}],
+  // providers: [{type: String, required: false}],
 })
 
 userSchema.set('toJSON', {
