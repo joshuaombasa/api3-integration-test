@@ -22,7 +22,7 @@ app.use(cors())
 
 app.use(middleware.requestLogger)
 
-app.use('/api/users', userRouter)
+// app.use('/api/users', userRouter)
 app.use('/api/provider', providerRouter)
 
 app.use(middleware.unknownEndpointHandler)
